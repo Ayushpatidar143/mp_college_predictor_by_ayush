@@ -1,5 +1,10 @@
 import pandas as pd
 import streamlit as st
+st.set_page_config(
+    page_title="Ayush MP Engineering College Predictor",
+    page_icon="🎓",
+    layout="wide"
+)
 
 st.set_page_config(
     page_title="MP Engineering College Predictor 2026", layout="wide"
@@ -73,7 +78,7 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
-st.title("🎓 MP Engineering College Predictor 2026")
+st.markdown("<h1>🎓 Ayush MP Engineering College Predictor</h1>", unsafe_allow_html=True)
 st.write(
     "Find eligible colleges and branches based on your JEE rank, category, and"
     " preferred branch!"
