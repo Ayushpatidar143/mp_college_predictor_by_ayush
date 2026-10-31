@@ -11,17 +11,17 @@ st.set_page_config(
 )
 st.markdown("""
     <style>
-    /* Global App Theme - Deep Dark with Vibrant Pink Vibe */
+    /* Main Area Background - Rich Deep Brown Vibe */
     .stApp {
-        background: #09060b;
-        color: #fce7f3;
+        background: #140c08;
+        color: #f5efe6;
         font-family: 'Inter', sans-serif;
     }
     
-    /* Modern Sleek Sidebar */
+    /* Sidebar Ko Pink Hi Rakha Hai */
     [data-testid="stSidebar"] {
-        background-color: #120914;
-        border-right: 1px solid rgba(236, 72, 153, 0.15);
+        background-color: #120914 !important;
+        border-right: 1px solid rgba(236, 72, 153, 0.15) !important;
     }
     
     /* Sidebar Headings & Labels */
@@ -34,7 +34,7 @@ st.markdown("""
         font-weight: 600 !important;
     }
 
-    /* Input Fields - Dark Box with Pink Focus Glow */
+    /* Sidebar Input Fields - Dark Box with Pink Focus Glow */
     [data-testid="stSidebar"] .stTextInput input, 
     [data-testid="stSidebar"] .stNumberInput input,
     [data-testid="stSidebar"] div[data-baseweb="select"] > div {
@@ -49,15 +49,15 @@ st.markdown("""
         box-shadow: 0 0 12px rgba(236, 72, 153, 0.4);
     }
 
-    /* Main Area Headers with Pink Gradient */
+    /* Main Area Headers with Warm Brown/Gold Accent */
     h1, h2, h3 {
-        color: #ffffff !important;
+        color: #fde047 !important;
         font-weight: 800;
         letter-spacing: -0.5px;
     }
 
-    /* Premium Neon Pink Gradient Action Button */
-    .stButton>button {
+    /* Sidebar Button - Pink Glow */
+    [data-testid="stSidebar"] .stButton>button {
         background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
         color: white;
         border-radius: 10px;
@@ -67,18 +67,18 @@ st.markdown("""
         box-shadow: 0 4px 20px rgba(236, 72, 153, 0.4);
         transition: all 0.3s ease;
     }
-    .stButton>button:hover {
+    [data-testid="stSidebar"] .stButton>button:hover {
         background: linear-gradient(135deg, #db2777 0%, #9d174d 100%);
         box-shadow: 0 6px 25px rgba(236, 72, 153, 0.7);
         transform: translateY(-1px);
         color: white;
     }
 
-    /* Glassmorphic Tables & Cards */
+    /* Main Area Tables & Cards Matching Brown Theme */
     [data-testid="stDataFrame"] {
-        background-color: #120914;
+        background-color: #1c110a;
         border-radius: 12px;
-        border: 1px solid rgba(236, 72, 153, 0.2);
+        border: 1px solid rgba(180, 83, 9, 0.3);
         padding: 5px;
         box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     }
