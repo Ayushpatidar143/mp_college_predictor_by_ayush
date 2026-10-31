@@ -6,55 +6,70 @@ st.set_page_config(
 )
 st.markdown("""
     <style>
-    /* Global App Styling - Clean White & Dark Modern Combo */
+    /* Global App Theme - Deep Dark SaaS Dashboard Vibe */
     .stApp {
-        background-color: #f8fafc;
-        color: #1e293b;
+        background-color: #030712;
+        color: #f3f4f6;
     }
     
-    /* Modern Dark Sidebar (Black/Dark Slate with Blue accents) */
+    /* Modern Sidebar Styling */
     [data-testid="stSidebar"] {
-        background-color: #0f172a;
-        border-right: 1px solid #1e293b;
+        background-color: #0b0f19;
+        border-right: 1px solid #1f2937;
     }
-    [data-testid="stSidebar"] label {
-        color: #f8fafc !important;
+    
+    /* Sidebar Text & Label Visibility Fix */
+    [data-testid="stSidebar"] h1, 
+    [data-testid="stSidebar"] h2, 
+    [data-testid="stSidebar"] h3, 
+    [data-testid="stSidebar"] label,
+    [data-testid="stSidebar"] .stMarkdown {
+        color: #f9fafb !important;
         font-weight: 600 !important;
     }
-    [data-testid="stSidebar"] .stTextInput input, [data-testid="stSidebar"] .stNumberInput input {
-        background-color: #1e293b;
-        color: white;
-        border-radius: 6px;
-        border: 1px solid #334155;
+
+    /* Input Fields Modern Box Style */
+    [data-testid="stSidebar"] .stTextInput input, 
+    [data-testid="stSidebar"] .stNumberInput input,
+    [data-testid="stSidebar"] div[data-baseweb="select"] > div {
+        background-color: #111827 !important;
+        color: #ffffff !important;
+        border-radius: 8px !important;
+        border: 1px solid #374151 !important;
     }
 
-    /* Stunning Blue Primary Button with Shadow */
+    /* Main Content Headers */
+    h1, h2, h3 {
+        color: #ffffff !important;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+    }
+
+    /* SaaS Style Glowing Primary Button */
     .stButton>button {
         background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
         color: white;
-        border-radius: 10px;
+        border-radius: 8px;
         padding: 0.6rem 1.2rem;
         font-weight: 700;
-        border: none;
-        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
     .stButton>button:hover {
         background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
-        box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+        box-shadow: 0 6px 25px rgba(37, 99, 235, 0.6);
+        border-color: rgba(255, 255, 255, 0.2);
         color: white;
     }
 
-    /* Professional Headers */
-    h1, h2, h3 {
-        color: #0f172a;
-        font-weight: 800;
-    }
-
-    /* Clean Dataframe / Table styling */
-    dataframe {
-        border-radius: 10px;
-        border: 1px solid #e2e8f0;
+    /* Glassmorphism Cards for Metrics / Tables */
+    [data-testid="stDataFrame"], div.stMetric {
+        background-color: #0b0f19;
+        border: 1px solid #1f2937;
+        border-radius: 12px;
+        padding: 10px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     }
     </style>
 """, unsafe_allow_html=True)
