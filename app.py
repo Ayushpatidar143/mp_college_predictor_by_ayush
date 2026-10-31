@@ -84,7 +84,7 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
-st.markdown("<h1>🎓 Ayush MP Engineering College Predictor</h1>", unsafe_allow_html=True)
+st.markdown("<h1>🎓 MP Engineering College Predictor</h1>", unsafe_allow_html=True)
 st.write(
     "Find eligible colleges and branches based on your JEE rank, category, and"
     " preferred branch!"
@@ -218,14 +218,34 @@ else:
       "Error: 'mp_cutoff.csv' file not found. Please run the extraction script"
       " first."
   )
-  # App ke andar ek Share Section
-st.markdown("---")
-st.subheader("📢 Share this Predictor")
-st.markdown(
-    "Help your friends find their best engineering college in MP! Copy"
-    " the link below:"
-)
+  import streamlit as st
 
-# Ek text box jisme aapka live app link hoga (aap apna live URL yahan daal sakte hain)
-app_url = "https://mpcollegepredictorbyayush.streamlit.app"
-st.text_input("App Link", value=app_url, key="share_link")
+st.markdown("---")
+st.markdown("### 📢 Share this Predictor")
+st.markdown("Help your friends find their best engineering college in MP!")
+
+# Live App URL
+app_url = "https://ayushmpcollegepredictor.streamlit.app"
+
+# Sirf WhatsApp Button ka HTML code
+whatsapp_html = f"""
+<div style="margin-top: 10px;">
+    <a href="https://api.whatsapp.com/send?text=Check%20out%20this%20amazing%20Ayush%20MP%20Engineering%20College%20Predictor:%20{app_url}" target="_blank" style="text-decoration: none;">
+        <button style="
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.4rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        ">
+            💬 Share on WhatsApp
+        </button>
+    </a>
+</div>
+"""
+
+st.markdown(whatsapp_html, unsafe_allow_html=True)
