@@ -2,8 +2,9 @@ import pandas as pd
 import streamlit as st
 import streamlit as st
 
-# Google Search Console Verification Tag
-st.markdown('<meta name="google-site-verification" content="GTTG1MH8pSqwGAIjeBBk7g3sFj5btuInK0fA9P_YFhM" />', unsafe_allow_html=True)
+import streamlit as st
+
+st.markdown('<meta name="google-site-verification" content="googlea3e98c077b1baf8e" />', unsafe_allow_html=True)
 
 st.set_page_config(
     page_title="MP Engineering College Predictor",
