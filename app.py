@@ -1,10 +1,6 @@
 import pandas as pd
 import streamlit as st
-import streamlit as st
 
-import streamlit as st
-
-st.markdown('<meta name="google-site-verification" content="googlea3e98c077b1baf8e" />', unsafe_allow_html=True)
 
 st.set_page_config(
     page_title="MP Engineering College Predictor",
