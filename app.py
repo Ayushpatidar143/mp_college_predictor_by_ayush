@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 
-st.markdown('<meta name="google-site-verification" content="GTTG1MH8pSqwGAIjeBBk7g3sFj5btuInK0fA9P_YFhM" />', unsafe_allow_html=True)
+
 
 
 st.set_page_config(
