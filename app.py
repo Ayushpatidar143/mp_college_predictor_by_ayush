@@ -11,70 +11,76 @@ st.set_page_config(
 )
 st.markdown("""
     <style>
-    /* Global App Theme - Deep Dark SaaS Dashboard Vibe */
+    /* Global App Theme - Deep Dark with Vibrant Pink Vibe */
     .stApp {
-        background-color: #030712;
-        color: #f3f4f6;
+        background: #09060b;
+        color: #fce7f3;
+        font-family: 'Inter', sans-serif;
     }
     
-    /* Modern Sidebar Styling */
+    /* Modern Sleek Sidebar */
     [data-testid="stSidebar"] {
-        background-color: #0b0f19;
-        border-right: 1px solid #1f2937;
+        background-color: #120914;
+        border-right: 1px solid rgba(236, 72, 153, 0.15);
     }
     
-    /* Sidebar Text & Label Visibility Fix */
+    /* Sidebar Headings & Labels */
     [data-testid="stSidebar"] h1, 
     [data-testid="stSidebar"] h2, 
     [data-testid="stSidebar"] h3, 
     [data-testid="stSidebar"] label,
     [data-testid="stSidebar"] .stMarkdown {
-        color: #f9fafb !important;
+        color: #fbcfe8 !important;
         font-weight: 600 !important;
     }
 
-    /* Input Fields Modern Box Style */
+    /* Input Fields - Dark Box with Pink Focus Glow */
     [data-testid="stSidebar"] .stTextInput input, 
     [data-testid="stSidebar"] .stNumberInput input,
     [data-testid="stSidebar"] div[data-baseweb="select"] > div {
-        background-color: #111827 !important;
+        background-color: #1a0f1e !important;
         color: #ffffff !important;
-        border-radius: 8px !important;
-        border: 1px solid #374151 !important;
+        border-radius: 10px !important;
+        border: 1px solid #4a1d5e !important;
+    }
+    [data-testid="stSidebar"] .stTextInput input:focus, 
+    [data-testid="stSidebar"] .stNumberInput input:focus {
+        border-color: #ec4899 !important;
+        box-shadow: 0 0 12px rgba(236, 72, 153, 0.4);
     }
 
-    /* Main Content Headers */
+    /* Main Area Headers with Pink Gradient */
     h1, h2, h3 {
         color: #ffffff !important;
         font-weight: 800;
         letter-spacing: -0.5px;
     }
 
-    /* SaaS Style Glowing Primary Button */
+    /* Premium Neon Pink Gradient Action Button */
     .stButton>button {
-        background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+        background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
         color: white;
-        border-radius: 8px;
-        padding: 0.6rem 1.2rem;
+        border-radius: 10px;
+        padding: 0.6rem 1.4rem;
         font-weight: 700;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 20px rgba(236, 72, 153, 0.4);
+        transition: all 0.3s ease;
     }
     .stButton>button:hover {
-        background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
-        box-shadow: 0 6px 25px rgba(37, 99, 235, 0.6);
-        border-color: rgba(255, 255, 255, 0.2);
+        background: linear-gradient(135deg, #db2777 0%, #9d174d 100%);
+        box-shadow: 0 6px 25px rgba(236, 72, 153, 0.7);
+        transform: translateY(-1px);
         color: white;
     }
 
-    /* Glassmorphism Cards for Metrics / Tables */
-    [data-testid="stDataFrame"], div.stMetric {
-        background-color: #0b0f19;
-        border: 1px solid #1f2937;
+    /* Glassmorphic Tables & Cards */
+    [data-testid="stDataFrame"] {
+        background-color: #120914;
         border-radius: 12px;
-        padding: 10px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        border: 1px solid rgba(236, 72, 153, 0.2);
+        padding: 5px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     }
     </style>
 """, unsafe_allow_html=True)
