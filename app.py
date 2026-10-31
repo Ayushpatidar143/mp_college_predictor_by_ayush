@@ -227,5 +227,5 @@ st.markdown(
 )
 
 # Ek text box jisme aapka live app link hoga (aap apna live URL yahan daal sakte hain)
-app_url = "https://mpcollegepredictor.streamlit.app"
+app_url = "https://mpcollegepredictorbyayush.streamlit.app"
 st.text_input("App Link", value=app_url, key="share_link")
