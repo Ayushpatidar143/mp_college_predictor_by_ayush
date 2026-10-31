@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 st.set_page_config(
-    page_title="Ayush MP Engineering College Predictor",
+    page_title="MP Engineering College Predictor",
     page_icon="🎓",
     layout="wide"
 )
@@ -218,3 +218,14 @@ else:
       "Error: 'mp_cutoff.csv' file not found. Please run the extraction script"
       " first."
   )
+  # App ke andar ek Share Section
+st.markdown("---")
+st.subheader("📢 Share this Predictor")
+st.markdown(
+    "Help your friends find their best engineering college in MP! Copy"
+    " the link below:"
+)
+
+# Ek text box jisme aapka live app link hoga (aap apna live URL yahan daal sakte hain)
+app_url = "https://mpcollegepredictor.streamlit.app"
+st.text_input("App Link", value=app_url, key="share_link")
